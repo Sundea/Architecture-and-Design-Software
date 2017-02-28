@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace lab2
 {
-    public partial class Form1 : Form
+    public partial class MDIContainer : Form
     {
-        public Form1()
+        public MDIContainer()
         {
             InitializeComponent();
         }
 
-        private void MDIChildNewForm_Click(object sender, EventArgs e)
+        private void newFile_Click(object sender, EventArgs e)
         {
             DocumentForm mdiChild = new DocumentForm();
             mdiChild.MdiParent = this;
