@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.textEditor = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // textEditor
             // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(284, 261);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.textEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEditor.Location = new System.Drawing.Point(0, 0);
+            this.textEditor.Name = "textEditor";
+            this.textEditor.Size = new System.Drawing.Size(284, 261);
+            this.textEditor.TabIndex = 0;
+            this.textEditor.Text = "";
             // 
             // DocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.textEditor);
             this.Name = "DocumentForm";
-            this.Text = "DocumentForm";
+            this.Text = "New File";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
@@ -55,6 +55,6 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox textEditor;
     }
 }

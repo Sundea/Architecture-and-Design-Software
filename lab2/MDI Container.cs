@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace lab2
@@ -23,5 +16,16 @@ namespace lab2
             mdiChild.MdiParent = this;
             mdiChild.Show();
         }
+
+        private void saveFileButton_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild != null)
+            {
+                DocumentForm active = (DocumentForm)this.ActiveMdiChild;
+                active.saveFile();
+            }
+        }
+
+
     }
 }
