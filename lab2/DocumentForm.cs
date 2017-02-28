@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace lab2
@@ -44,7 +45,9 @@ namespace lab2
         public void resaveFile(string fileName)
         {
             textEditor.SaveFile(fileName, RichTextBoxStreamType.RichText);
-            this.Text = fileName;
+            string text = Path.GetFileName(fileName);
+            text = Path.GetFileNameWithoutExtension(text);
+            this.Text = text;
         }
 
 
