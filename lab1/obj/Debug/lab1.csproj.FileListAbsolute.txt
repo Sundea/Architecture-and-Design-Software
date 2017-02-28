@@ -7,3 +7,12 @@ c:\users\dpoli\documents\visual studio 2015\Projects\lab1\lab1\obj\Debug\lab1.Pr
 c:\users\dpoli\documents\visual studio 2015\Projects\lab1\lab1\obj\Debug\lab1.csproj.GenerateResource.Cache
 c:\users\dpoli\documents\visual studio 2015\Projects\lab1\lab1\obj\Debug\lab1.exe
 c:\users\dpoli\documents\visual studio 2015\Projects\lab1\lab1\obj\Debug\lab1.pdb
+C:\Users\admin\Documents\GitHub\Architecture-and-Design-Software\lab1\bin\Debug\lab1.exe.config
+C:\Users\admin\Documents\GitHub\Architecture-and-Design-Software\lab1\obj\Debug\lab1.exe
+C:\Users\admin\Documents\GitHub\Architecture-and-Design-Software\lab1\obj\Debug\lab1.pdb
+C:\Users\admin\Documents\GitHub\Architecture-and-Design-Software\lab1\bin\Debug\lab1.exe
+C:\Users\admin\Documents\GitHub\Architecture-and-Design-Software\lab1\bin\Debug\lab1.pdb
+C:\Users\admin\Documents\GitHub\Architecture-and-Design-Software\lab1\obj\Debug\lab1.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\GitHub\Architecture-and-Design-Software\lab1\obj\Debug\lab1.Form1.resources
+C:\Users\admin\Documents\GitHub\Architecture-and-Design-Software\lab1\obj\Debug\lab1.Properties.Resources.resources
+C:\Users\admin\Documents\GitHub\Architecture-and-Design-Software\lab1\obj\Debug\lab1.csproj.GenerateResource.Cache
