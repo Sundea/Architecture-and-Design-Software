@@ -1,0 +1,9 @@
+c:\Users\dpoli\documents\visual studio 2015\Projects\lab1\lab1 (other)\bin\Debug\lab1 (other).exe.config
+c:\Users\dpoli\documents\visual studio 2015\Projects\lab1\lab1 (other)\bin\Debug\lab1 (other).exe
+c:\Users\dpoli\documents\visual studio 2015\Projects\lab1\lab1 (other)\bin\Debug\lab1 (other).pdb
+c:\Users\dpoli\documents\visual studio 2015\Projects\lab1\lab1 (other)\obj\Debug\lab1 (other).csprojResolveAssemblyReference.cache
+c:\Users\dpoli\documents\visual studio 2015\Projects\lab1\lab1 (other)\obj\Debug\lab1__other_.Form1.resources
+c:\Users\dpoli\documents\visual studio 2015\Projects\lab1\lab1 (other)\obj\Debug\lab1__other_.Properties.Resources.resources
+c:\Users\dpoli\documents\visual studio 2015\Projects\lab1\lab1 (other)\obj\Debug\lab1 (other).csproj.GenerateResource.Cache
+c:\Users\dpoli\documents\visual studio 2015\Projects\lab1\lab1 (other)\obj\Debug\lab1 (other).exe
+c:\Users\dpoli\documents\visual studio 2015\Projects\lab1\lab1 (other)\obj\Debug\lab1 (other).pdb
