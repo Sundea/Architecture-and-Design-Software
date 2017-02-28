@@ -14,6 +14,13 @@ namespace lab2
             this.FileWasCreated = false;
         }
 
+        public DocumentForm(string path):this()
+        {
+            this.textEditor.LoadFile(path);
+            this.Text = Path.GetFileNameWithoutExtension(path);
+            this.FileWasCreated = true;
+        }
+
         public void saveFile()
         {
             if (this.FileWasCreated)
@@ -45,9 +52,7 @@ namespace lab2
         public void resaveFile(string fileName)
         {
             textEditor.SaveFile(fileName, RichTextBoxStreamType.RichText);
-            string text = Path.GetFileName(fileName);
-            text = Path.GetFileNameWithoutExtension(text);
-            this.Text = text;
+            this.Text = Path.GetFileNameWithoutExtension(fileName);
         }
 
 

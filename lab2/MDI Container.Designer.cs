@@ -35,6 +35,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.newFileButton = new System.Windows.Forms.ToolStripButton();
             this.saveFileButton = new System.Windows.Forms.ToolStripButton();
+            this.openFileButton = new System.Windows.Forms.ToolStripButton();
             this.menuStrip.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -68,7 +69,8 @@
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newFileButton,
-            this.saveFileButton});
+            this.saveFileButton,
+            this.openFileButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(284, 25);
@@ -94,6 +96,16 @@
             this.saveFileButton.Size = new System.Drawing.Size(23, 22);
             this.saveFileButton.Text = "toolStripButton1";
             this.saveFileButton.Click += new System.EventHandler(this.saveFileButton_Click);
+            // 
+            // openFileButton
+            // 
+            this.openFileButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.openFileButton.Image = ((System.Drawing.Image)(resources.GetObject("openFileButton.Image")));
+            this.openFileButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openFileButton.Name = "openFileButton";
+            this.openFileButton.Size = new System.Drawing.Size(23, 22);
+            this.openFileButton.Text = "toolStripButton1";
+            this.openFileButton.Click += new System.EventHandler(this.openFileButton_Click);
             // 
             // MDIContainer
             // 
@@ -123,6 +135,7 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton newFileButton;
         private System.Windows.Forms.ToolStripButton saveFileButton;
+        private System.Windows.Forms.ToolStripButton openFileButton;
     }
 }
 

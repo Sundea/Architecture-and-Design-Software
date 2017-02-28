@@ -26,6 +26,28 @@ namespace lab2
             }
         }
 
+        private void openFileButton_Click(object sender, EventArgs e)
+        {
+            var openFileDialog = new OpenFileDialog();
 
+            openFileDialog.InitialDirectory = "C:\\Users\\admin\\Documents";
+            openFileDialog.Filter = "Rich Text File|*.rtf";
+            openFileDialog.DefaultExt = "*.rtf";
+            openFileDialog.RestoreDirectory = true;
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    DocumentForm mdiChild = new DocumentForm(openFileDialog.FileName);
+                    mdiChild.MdiParent = this;
+                    mdiChild.Show();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                }
+            }
+        }
     }
 }
