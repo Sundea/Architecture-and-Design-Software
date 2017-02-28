@@ -16,5 +16,12 @@ namespace lab2
         {
             InitializeComponent();
         }
+
+        private void MDIChildNewForm_Click(object sender, EventArgs e)
+        {
+            DocumentForm mdiChild = new DocumentForm();
+            mdiChild.MdiParent = this;
+            mdiChild.Show();
+        }
     }
 }
