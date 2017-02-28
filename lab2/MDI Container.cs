@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace lab2
@@ -47,6 +49,32 @@ namespace lab2
                 {
                     MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
                 }
+            }
+        }
+
+        private void changeColorButton_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild != null)
+            {
+                DocumentForm active = (DocumentForm)this.ActiveMdiChild;
+                active.changeColor();
+            }
+        }
+
+        private void MDIContainer_Load(object sender, EventArgs e)
+        {
+            foreach (FontFamily family in FontFamily.Families)
+            {
+                this.fontsComboBox.Items.Add(family.Name);
+            }
+        }
+
+        private void fontsComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild != null)
+            {
+                DocumentForm active = (DocumentForm)this.ActiveMdiChild;
+                active.changeFont(new FontFamily((string)this.fontsComboBox.SelectedItem));
             }
         }
     }

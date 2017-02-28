@@ -36,6 +36,8 @@
             this.newFileButton = new System.Windows.Forms.ToolStripButton();
             this.saveFileButton = new System.Windows.Forms.ToolStripButton();
             this.openFileButton = new System.Windows.Forms.ToolStripButton();
+            this.changeColorButton = new System.Windows.Forms.ToolStripButton();
+            this.fontsComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.menuStrip.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -70,7 +72,9 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newFileButton,
             this.saveFileButton,
-            this.openFileButton});
+            this.openFileButton,
+            this.changeColorButton,
+            this.fontsComboBox});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(284, 25);
@@ -84,7 +88,7 @@
             this.newFileButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newFileButton.Name = "newFileButton";
             this.newFileButton.Size = new System.Drawing.Size(23, 22);
-            this.newFileButton.Text = "toolStripButton1";
+            this.newFileButton.Text = "Новий документ";
             this.newFileButton.Click += new System.EventHandler(this.newFile_Click);
             // 
             // saveFileButton
@@ -94,7 +98,7 @@
             this.saveFileButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveFileButton.Name = "saveFileButton";
             this.saveFileButton.Size = new System.Drawing.Size(23, 22);
-            this.saveFileButton.Text = "toolStripButton1";
+            this.saveFileButton.Text = "Сохранить";
             this.saveFileButton.Click += new System.EventHandler(this.saveFileButton_Click);
             // 
             // openFileButton
@@ -104,8 +108,24 @@
             this.openFileButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openFileButton.Name = "openFileButton";
             this.openFileButton.Size = new System.Drawing.Size(23, 22);
-            this.openFileButton.Text = "toolStripButton1";
+            this.openFileButton.Text = "Открить";
             this.openFileButton.Click += new System.EventHandler(this.openFileButton_Click);
+            // 
+            // changeColorButton
+            // 
+            this.changeColorButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.changeColorButton.Image = ((System.Drawing.Image)(resources.GetObject("changeColorButton.Image")));
+            this.changeColorButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.changeColorButton.Name = "changeColorButton";
+            this.changeColorButton.Size = new System.Drawing.Size(23, 22);
+            this.changeColorButton.Text = "Цвет шрифта";
+            this.changeColorButton.Click += new System.EventHandler(this.changeColorButton_Click);
+            // 
+            // fontsComboBox
+            // 
+            this.fontsComboBox.Name = "fontsComboBox";
+            this.fontsComboBox.Size = new System.Drawing.Size(121, 25);
+            this.fontsComboBox.SelectedIndexChanged += new System.EventHandler(this.fontsComboBox_SelectedIndexChanged);
             // 
             // MDIContainer
             // 
@@ -118,6 +138,7 @@
             this.MainMenuStrip = this.menuStrip;
             this.Name = "MDIContainer";
             this.Text = "Simple Text Editor";
+            this.Load += new System.EventHandler(this.MDIContainer_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -136,6 +157,8 @@
         private System.Windows.Forms.ToolStripButton newFileButton;
         private System.Windows.Forms.ToolStripButton saveFileButton;
         private System.Windows.Forms.ToolStripButton openFileButton;
+        private System.Windows.Forms.ToolStripButton changeColorButton;
+        private System.Windows.Forms.ToolStripComboBox fontsComboBox;
     }
 }
 

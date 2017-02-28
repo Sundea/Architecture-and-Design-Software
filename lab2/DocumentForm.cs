@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -55,6 +56,24 @@ namespace lab2
         public void resaveFile(string fileName)
         {
             textEditor.SaveFile(fileName, RichTextBoxStreamType.RichText);
+        }
+
+        public void changeColor()
+        {
+            ColorDialog dialog = new ColorDialog();
+            dialog.ShowDialog();
+            if (textEditor.SelectedText != String.Empty)
+            {
+                textEditor.SelectionColor = dialog.Color;
+            }
+        }
+
+        public void changeFont(FontFamily font)
+        {
+            if (textEditor.SelectedText != String.Empty)
+            {
+                textEditor.SelectionFont = new Font(font, textEditor.Font.SizeInPoints);
+            }
         }
     }
 }
