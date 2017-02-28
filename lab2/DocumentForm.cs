@@ -7,6 +7,7 @@ namespace lab2
     public partial class DocumentForm : Form
     {
         private bool FileWasCreated { get; set; } 
+        private string path { get; set; }
 
         public DocumentForm()
         {
@@ -17,6 +18,7 @@ namespace lab2
         public DocumentForm(string path):this()
         {
             this.textEditor.LoadFile(path);
+            this.path = path;
             this.Text = Path.GetFileNameWithoutExtension(path);
             this.FileWasCreated = true;
         }
@@ -25,7 +27,7 @@ namespace lab2
         {
             if (this.FileWasCreated)
             {
-                resaveFile(this.Text);
+                resaveFile(path);
             } 
             else
             {
@@ -46,15 +48,13 @@ namespace lab2
             {
                 this.resaveFile(saveDialog.FileName);
                 this.FileWasCreated = true;
+                this.Text = Path.GetFileNameWithoutExtension(saveDialog.FileName);
             }
         }
 
         public void resaveFile(string fileName)
         {
             textEditor.SaveFile(fileName, RichTextBoxStreamType.RichText);
-            this.Text = Path.GetFileNameWithoutExtension(fileName);
         }
-
-
     }
 }
